@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Ocean & Sand Palette - Premium Travel Feel */
+  --background: 0 0% 100%;
+  --foreground: 222 47% 11%;
+  
+  --primary: 45 100% 35%; /* Gold */
+  --primary-foreground: 210 40% 98%;
+  
+  --secondary: 35 92% 65%; /* Golden Sand */
+  --secondary-foreground: 222 47% 11%;
+  
+  --muted: 210 40% 96%;
+  --muted-foreground: 215 16% 47%;
+  
+  --accent: 199 89% 48%;
+  --accent-foreground: 210 40% 98%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 210 40% 98%;
+  
+  --border: 214 32% 91%;
+  --input: 214 32% 91%;
+  --ring: 199 89% 48%;
+  
+  --radius: 1rem;
+  
+  --font-sans: 'DM Sans', sans-serif;
+  --font-display: 'Playfair Display', serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-primary/20;
+    font-family: var(--font-sans);
+    background-image: 
+      radial-gradient(at 0% 0%, hsla(199, 89%, 48%, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, hsla(35, 92%, 65%, 0.15) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    @apply font-bold tracking-tight text-foreground;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-2xl border border-white/50 shadow-[0_8px_32px_0_rgba(31,38,135,0.15)];
+  }
+  
+  .glass-input {
+    @apply bg-white/60 backdrop-blur-md border-white/40 focus:bg-white/90 focus:border-primary/50 transition-all duration-300 shadow-inner;
+  }
+  
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .text-shadow-lg {
+    text-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 hover:bg-primary/40 rounded-full transition-colors;
+}
