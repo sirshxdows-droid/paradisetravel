@@ -39,7 +39,7 @@ export function Navigation() {
             <Palmtree className="w-5 h-5 md:w-6 md:h-6" />
           </div>
           <span className={`font-display font-bold text-xl md:text-2xl tracking-tight transition-colors text-white`}>
-            Paradise<span className="text-primary font-extrabold italic">Travel</span>
+            Luxe<span className="text-primary font-extrabold italic">Stays</span>
           </span>
         </Link>
 
@@ -55,7 +55,7 @@ export function Navigation() {
             `}
           >
             <Phone className="w-4 h-4 mr-2" />
-            Contact for Prices
+            Contact For Prices
           </Button>
         </div>
 
