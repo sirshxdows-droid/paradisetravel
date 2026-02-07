@@ -12,7 +12,7 @@ export function Footer() {
                 <Palmtree className="w-6 h-6" />
               </div>
               <span className="font-display font-bold text-2xl text-foreground">
-                Paradise<span className="text-primary">Travel</span>
+                Luxe<span className="text-primary">Stays</span>
               </span>
             </div>
             <p className="text-muted-foreground leading-relaxed">
@@ -39,7 +39,7 @@ export function Footer() {
               </li>
               <li className="flex items-center text-muted-foreground">
                 <Mail className="w-5 h-5 mr-3 text-primary" />
-                <span>contact@paradisetravel.com</span>
+                <span>contact@luxestays.com</span>
               </li>
               <li className="flex items-center text-muted-foreground">
                 <MapPin className="w-5 h-5 mr-3 text-primary" />
